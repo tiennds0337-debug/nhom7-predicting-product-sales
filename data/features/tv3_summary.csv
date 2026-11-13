@@ -1,0 +1,13 @@
+﻿metric,value
+raw_rows,541910
+clean_rows,522503
+raw_duplicate_rows,5268
+raw_cancelled_invoice_rows,9288
+known_large_anomalous_invoice_rows_removed,1
+clean_products,3790
+clean_customers,4334
+product_week_rows_full_panel,204660
+final_feature_count,29
+train_rows,166760
+validation_rows,26530
+test_rows,11370

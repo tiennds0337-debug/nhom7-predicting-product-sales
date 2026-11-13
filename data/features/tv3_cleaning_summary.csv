@@ -1,0 +1,13 @@
+﻿metric,value
+raw_rows,541910
+cancelled_invoice_rows_removed,9288
+known_large_anomalous_invoice_rows_removed,1
+rows_after_positive_quantity_price_and_product_filter_before_dedup,527724
+duplicate_rows_removed_after_filters,5221
+raw_duplicate_rows,5268
+raw_nonpositive_quantity_rows,10624
+raw_nonpositive_price_rows,2517
+raw_cancelled_invoice_rows,9288
+clean_rows,522503
+clean_products,3790
+clean_customers,4334
