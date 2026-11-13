@@ -1,0 +1,31 @@
+﻿feature,group,meaning,allowed_time
+sales,Target,Tổng doanh thu Product–Week = tổng quantity × price; mục tiêu dự báo.,Target; không dùng làm feature
+year,Time,Năm của tuần dự báo.,Biết trước
+month,Time,Tháng của tuần dự báo.,Biết trước
+quarter,Time,Quý của tuần dự báo.,Biết trước
+week_of_year,Time,Tuần ISO trong năm.,Biết trước
+trend_index,Time,Số tuần kể từ tuần đầu tiên trong panel.,Biết trước
+is_year_end,Time,Cờ tuần thuộc tháng 11 hoặc 12.,Biết trước
+retail_peak_season_proxy,Seasonality proxy,Proxy mùa cao điểm tháng 11–12; không phải chi phí quảng cáo.,Biết trước
+avg_price_lag_1,Product,Giá trung bình của sản phẩm ở tuần lịch liền trước; NaN nếu tuần đó không có giao dịch.,Quá khứ
+product_avg_price_hist,Product,"Giá trung bình tích lũy của các tuần trước, không gồm tuần hiện tại.",Quá khứ
+product_active_weeks_hist,Product,Số tuần lịch đã trôi qua kể từ tuần đầu của panel cho sản phẩm.,Quá khứ
+transaction_count_lag_1,Product,Số hóa đơn của sản phẩm ở tuần lịch liền trước; 0 nếu không phát sinh.,Quá khứ
+unique_customers_lag_1,Customer,Số khách hàng của sản phẩm ở tuần lịch liền trước; 0 nếu không phát sinh.,Quá khứ
+price_change_vs_hist,Product,Tỷ lệ thay đổi giá tuần liền trước so với giá trung bình lịch sử.,Quá khứ
+avg_customer_prior_recency_days,RFM,Recency trung bình của khách mua sản phẩm trong tuần; mỗi khách chỉ dùng lịch sử trước giao dịch hiện tại.,Quá khứ
+avg_customer_prior_frequency,RFM,"Số giao dịch trước đó trung bình của khách, tính tại thời điểm từng giao dịch.",Quá khứ
+avg_customer_prior_monetary,RFM,"Doanh thu tích lũy trước đó trung bình của khách, tính tại thời điểm từng giao dịch.",Quá khứ
+R_score,RFM,"Điểm Recency 1–5; percentile so với dữ liệu product-week của các tuần trước, điểm cao là recency thấp.",Quá khứ; expanding
+F_score,RFM,Điểm Frequency 1–5; percentile so với dữ liệu product-week của các tuần trước.,Quá khứ; expanding
+M_score,RFM,Điểm Monetary 1–5; percentile so với dữ liệu product-week của các tuần trước.,Quá khứ; expanding
+RFM_score,RFM,"Trung bình R_score, F_score, M_score; điểm thành phần chỉ tham chiếu các tuần trước.",Quá khứ; expanding
+sales_lag_1,Sales history,Sales của tuần lịch liền trước; tuần không giao dịch được điền sales = 0.,Quá khứ
+sales_lag_2,Sales history,Sales của hai tuần lịch trước.,Quá khứ
+sales_lag_4,Sales history,Sales của bốn tuần lịch trước.,Quá khứ
+sales_roll_mean_4,Sales history,"Trung bình sales 4 tuần lịch trước, không gồm tuần hiện tại.",Quá khứ
+sales_roll_mean_8,Sales history,"Trung bình sales 8 tuần lịch trước, không gồm tuần hiện tại.",Quá khứ
+sales_roll_std_4,Sales history,"Độ lệch chuẩn sales 4 tuần lịch trước, không gồm tuần hiện tại.",Quá khứ
+transaction_roll_mean_4,Activity proxy,Trung bình số hóa đơn trong 4 tuần lịch trước.,Quá khứ
+customer_roll_mean_4,Activity proxy,Trung bình số khách hàng trong 4 tuần lịch trước.,Quá khứ
+market_activity_proxy_lag1,Marketing proxy,Tổng số hóa đơn + khách hàng của tuần lịch liền trước; không phải advertising spend.,Quá khứ
